@@ -89,8 +89,9 @@ header nav ul a:hover{
     text-align: center;
     margin-left: 100px;
     padding-top: 1px;
-    background-color:green;
-    color: wheat;
+    background-color:white;
+    margin-top: 5px;
+    display: flex;      
     cursor:pointer;
     width: 10pc;
     height: 20px;
