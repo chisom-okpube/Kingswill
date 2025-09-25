@@ -3,22 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-</head>
+<style>
+    .slidein{
+        width: 200px;
+        opacity: 0;
+        transform: translateX(-100%);
+        animation: slidein 3s forwards;
+        border-radius: 2px;
+        
+        
+
+    }
+    .slides{
+        display: flex;
+        width: 100%;
+        animation: slideshow 9s infinite;
+    }
+    .slides img{
+        width: 300px;
+        height: 200px;
+    }
+    @keyframes slidein {
+        to {
+            opacity: 12;
+            transform: translateX(0); 
+        }
+   
+    }
+
+</style>
 <body>
-    <header>
+ <div class="background">
+    <header><h2><marquee behavior="medium" direction="left" >WELCOME TO KINGSWILL INTERGRATED CONCEPT LTD.</marquee></h2>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Service.html">Our Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>     
-                            
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <main class="ball">
+        <div class="slider">
+            <div class="slides">
+                <img src="Image/wall bracket.jpg"alt="Lighting Accessories" class="slidein">
+                <img src="Image/image 4.png" alt="Wiring Accessories" class="slidein" style="width: 170px;">
+                <img src="Image/drop light.jpg" alt="" class="slidein" style="margin-bottom: -10px;">
+                <img src="Image/sockets and switches.png" alt="" class="slidein" style="width: 200px;"> <br> <br>
+            </div>
+        </div>
+       <br> <div style="background-color: black; color: white; border-radius:5px; width: 500px; gap: 30px; margin-left: auto; "> 
+             WHY CHOOSE US <br> <br>
+             Kingswill  Intergrated Concept LTD we specialise  in providing top-quality materials for homes business,and industrial projects.  <br>
+             Whether you're an At electrician, a contractor,or a home owner, we have everythig you need -from piping to fittings to cables. </h5> <br>
+             
+       </div>
+    </main>
+     <br> <br><footer>
+           <div class="icons">
+                 <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-weebly"></i>
+            </div>
+          
+        </footer>
+ </div>    
 </body>
 </html>
